@@ -22,11 +22,8 @@ requirements:
     - pip
   run:
     - python =3
-    - astropy
-    - browser_cookie3
     - ctapipe =0.19
     - ctapipe-io-nectarcam
-    - mechanize
     - pandas
 
 test:
