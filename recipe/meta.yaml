@@ -1,5 +1,5 @@
 {% set name = "nectarchain" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nectarchain-{{ version }}.tar.gz
-  sha256: 1ee59866fc861cede16d3cc9358729a247529292634630298f7219b46456a495
+  sha256: 777be6b6d9f752b5607505e1431dcb9117216e03f9a7ff028a62211e4c8ebfc2
 
 build:
   number: 0
