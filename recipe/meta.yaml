@@ -23,11 +23,8 @@ requirements:
   run:
     - python =3
     - astropy
-    - ctapipe =0.12
+    - ctapipe =0.19
     - ctapipe-io-nectarcam
-    - numpy <1.23
-    - protozfits =2.0
-    - pytables >=3.7
 
 test:
   imports:
