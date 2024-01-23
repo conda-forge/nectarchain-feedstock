@@ -25,6 +25,8 @@ requirements:
     - ctapipe =0.19
     - ctapipe-io-nectarcam
     - pandas
+    - zeo
+    - zodb
 
 test:
   imports:
