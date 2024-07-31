@@ -25,7 +25,7 @@ requirements:
     - ctapipe =0.19
     - ctapipe-io-nectarcam
     - pandas
-    - scipy =1.11
+    - scipy =1.11.4
     - zeo
     - zodb
 
