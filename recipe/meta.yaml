@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nectarchain-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nectarchain-{{ version }}.tar.gz
   sha256: b5e7094adc8177fda84529d228ef54b81d90dc23395de2d4c3f6357377f2e737
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
-    - python =3
+    - python {{ python_min }}
     - setuptools >=64.0.3
     - setuptools-scm >=3.4
     - pip
   run:
-    - python =3
+    - python >={{ python_min }}
     - ctapipe =0.19
     - ctapipe-io-nectarcam
     - pandas
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/cta-observatory/nectarchain
