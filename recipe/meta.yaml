@@ -28,6 +28,10 @@ requirements:
     - scipy =1.11.4
     - zeo
     - zodb
+    - lmfit # needed into TRR
+    - h5py # needed into TRR (should be removed to use I/O methods of containers)
+    - pyqt5 # [linux]
+    - pyqt6 # [osx and arm64]
 
 test:
   imports:
