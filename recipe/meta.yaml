@@ -30,7 +30,8 @@ requirements:
     - zodb
     - lmfit  # needed into TRR
     - h5py  # needed into TRR (should be removed to use I/O methods of containers)
-    - pyqt
+    - pyqt6
+    - pyqtgraph
 
 test:
   imports:
