@@ -26,7 +26,7 @@ requirements:
     - ctapipe-io-nectarcam
     - lmfit
     - pandas
-    - pyqt5
+    - pyqt
     - pyqtgraph
     - scipy =1.11.4
     - zeo
