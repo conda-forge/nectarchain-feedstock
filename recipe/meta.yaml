@@ -1,5 +1,5 @@
 {% set name = "nectarchain" %}
-{% set version = "0.1.9" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nectarchain-{{ version }}.tar.gz
-  sha256: b5e7094adc8177fda84529d228ef54b81d90dc23395de2d4c3f6357377f2e737
+  sha256: 29dec11e47910635834db7883730f33a1a1ecc1e8fd92fe3bf3b5a4052150e98
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -24,7 +24,10 @@ requirements:
     - python >={{ python_min }}
     - ctapipe =0.19
     - ctapipe-io-nectarcam
+    - lmfit
     - pandas
+    - pyqt
+    - pyqtgraph
     - scipy =1.11.4
     - zeo
     - zodb
