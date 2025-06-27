@@ -22,13 +22,13 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - ctapipe =0.19
-    - ctapipe-io-nectarcam
+    - ctapipe =0.24
+    - ctapipe-io-nectarcam =0.2
     - lmfit
     - pandas
     - pyqt
     - pyqtgraph
-    - scipy =1.11.4
+    - scipy
     - zeo
     - zodb
 
