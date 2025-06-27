@@ -24,6 +24,7 @@ requirements:
     - python >={{ python_min }}
     - ctapipe =0.24
     - ctapipe-io-nectarcam =0.2
+    - h5py
     - lmfit
     - pandas
     - pyqt
